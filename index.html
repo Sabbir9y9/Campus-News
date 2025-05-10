@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Campus News</h1>
+  </header>
+
+  <main>
+    <section id="news-list"></section>
+
+    <section class="form-section">
+      <h2>Submit a News</h2>
+      <form id="newsForm">
+        <input type="text" id="title" placeholder="News Title" required />
+        <textarea id="content" placeholder="News Content" required></textarea>
+        <input type="text" id="imageUrl" placeholder="Image URL (optional)" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
